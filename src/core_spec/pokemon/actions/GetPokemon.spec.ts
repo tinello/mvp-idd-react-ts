@@ -5,7 +5,7 @@ import { Pokemon } from '../../../core/pokemon/domain/PokemonList';
 
 
 describe('Get Pokemon correctly', async () => {
-    it('Should all Pokemons correctly', async () => {
+    it('Should return a_pokemon correctly', async () => {
       const apiClient = new ApiClient()
       const spy = vi.spyOn(apiClient, 'get')
       spy.mockImplementation(() => new Promise<Pokemon>((resolve) => {
