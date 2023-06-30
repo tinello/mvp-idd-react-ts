@@ -36,12 +36,3 @@ export default class ApiClient {
     )
   }
 }
-
-type ApiClientBodyValue =
-  | string
-  | number
-  | undefined
-  | null
-  | string[]
-  | number[]
-type ApiClientBody = Record<string, ApiClientBodyValue | Record<string, ApiClientBodyValue>>
